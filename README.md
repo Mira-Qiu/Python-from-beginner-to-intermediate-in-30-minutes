@@ -90,24 +90,7 @@ numbers
 
 numbers.extend(example)
 numbers
-#['computer',
- 'random',
- 'keyboard',
- 'random',
- 1,
- 2,
- 3,
- 1,
- 3,
- 4,
- 2,
- 4,
- 5,
- 3,
- 'computer',
- 'random',
- 'keyboard',
- 'random']
+#['computer', 'random', 'keyboard', 'random', 1, 2, 3, 1, 3, 4, 2, 4, 5, 3, 'computer','random', 'keyboard', 'random']
  ```
  
  ## For loop
@@ -147,4 +130,16 @@ def printname(name,age):
 
 ## Class, Objects, Metods
 
+self： like a tempera object for this class, and gives the access variables and functions of it. So, just keep the first parameter is self when you create a method
+```py
+class calculator:
+  def add(self,a,b):
+    return a+b
+  def sub(self, a,b):
+    return a-b
+    
+clac = calculator()
+result = clac.add(5,2)
+print(result)
+```
 
