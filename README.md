@@ -55,4 +55,96 @@ name ="mingming"
 #True
 ```
 
+## More operation and sequences and lists
+```py
+numbers = [21,30,23,45,67,78]
+len(numbers)  #6
+max(numbers)   #78
+min(numbers)   #21
+
+list("gautam")
+#['g', 'a', 'u', 't', 'a', 'm']
+
+example = list('simplebook')
+example
+# ['s', 'i', 'm', 'p', 'l', 'e', 'b', 'o', 'o', 'k']
+example[6:] =list('nameis make')
+example
+# ['s', 'i', 'm', 'p', 'l', 'e', 'n', 'a', 'm', 'e', 'i', 's', 'a', 'k', 'e']
+```
+
+## Introduction to methods
+```py
+example =['computer','random','keyboard']
+example.append('random')
+example
+# ['computer', 'random', 'keyboard', 'random']
+
+numbers =[1,2,3,1,3,4,2,4,5,3]
+numbers.count(1)
+# 2 （1出现 2次）
+
+numbers = example + numbers
+numbers
+#  ['computer', 'random', 'keyboard', 'random', 1, 2, 3, 1, 3, 4, 2, 4, 5, 3]
+
+numbers.extend(example)
+numbers
+#['computer',
+ 'random',
+ 'keyboard',
+ 'random',
+ 1,
+ 2,
+ 3,
+ 1,
+ 3,
+ 4,
+ 2,
+ 4,
+ 5,
+ 3,
+ 'computer',
+ 'random',
+ 'keyboard',
+ 'random']
+ ```
+ 
+ ## For loop
+```py
+ for item in numbers:
+  print("Ï have " + item)
+  
+ while True:
+  text = input("Enter something: ")
+  if(text == "quit" ) : break
+```
+
+## User defined functions
+```py
+def gbp_to_usd(gbp):
+  usd = gbp * 1.5
+  return usd
+  
+usd = gbp_to_usd(5)
+print(usd)
+
+# 7.5
+```
+
+## Function parameter
+```py
+def  printname(name):
+  print(name)  # only 1 positional argument
+  
+def printname(*name):
+  print(name)  #can take a list of names as argument
+  
+def printname(name,age):
+  print(name)
+  print(age)
+```
+
+## Class, Objects, Metods
+
 
