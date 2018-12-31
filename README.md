@@ -142,4 +142,26 @@ clac = calculator()
 result = clac.add(5,2)
 print(result)
 ```
+```py
+class class1:
+  var1 ="I am class1"
+class class2:
+  var2 ="I am class2"
+class class3(class1,class2):
+  var3="Ï am class3"
+  
+example = class3()
+example.var1
+example.var2
+```
+
+## Reading and writing into file
+```py
+file = open('g:/test.txt','w')
+file.write("this is my first file")
+file.close()
+file.open('g:/test.txt','r')
+file.read(10)
+file.read()
+```
 
