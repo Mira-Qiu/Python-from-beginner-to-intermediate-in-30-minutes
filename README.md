@@ -163,5 +163,8 @@ file.close()
 file.open('g:/test.txt','r')
 file.read(10)
 file.read()
+file.readline()
+file.seek(0)  #0
+files.readlines()
 ```
 
